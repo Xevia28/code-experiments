@@ -1,346 +1,620 @@
-// Define multiple quizzes
-const quizzes = {
+{
     "Cybersecurity Easy": {
-        questions: [
+        "questions": [
             {
                 "question": "What does the CIA Triad stand for?",
-                "options": ["Confidentiality, Integrity, Availability", "Confidentiality, Integrity, Authentication", "Confidentiality, Integrity, Accountability", "Confidentiality, Integrity, Authorization"],
+                "options": [
+                    "Confidentiality, Integrity, Availability",
+                    "Confidentiality, Integrity, Authentication",
+                    "Confidentiality, Integrity, Accountability",
+                    "Confidentiality, Integrity, Authorization"
+                ],
                 "correctAnswer": 0,
                 "category": "General Security Concepts"
             },
             {
                 "question": "Which of the following is NOT a principle of the Zero Trust Model?",
-                "options": ["Trust but verify", "Assume breach", "Least privilege", "Micro-segmentation"],
+                "options": [
+                    "Trust but verify",
+                    "Assume breach",
+                    "Least privilege",
+                    "Micro-segmentation"
+                ],
                 "correctAnswer": 0,
                 "category": "General Security Concepts"
             },
             {
                 "question": "What is the purpose of non-repudiation in security?",
-                "options": ["To ensure data is not altered", "To ensure users cannot deny their actions", "To ensure data is available when needed", "To ensure data is encrypted"],
+                "options": [
+                    "To ensure data is not altered",
+                    "To ensure users cannot deny their actions",
+                    "To ensure data is available when needed",
+                    "To ensure data is encrypted"
+                ],
                 "correctAnswer": 1,
                 "category": "General Security Concepts"
             },
             {
                 "question": "Which of the following is an example of a technical security control?",
-                "options": ["Security awareness training", "Access control policy", "Firewall", "Security audit"],
+                "options": [
+                    "Security awareness training",
+                    "Access control policy",
+                    "Firewall",
+                    "Security audit"
+                ],
                 "correctAnswer": 2,
                 "category": "General Security Concepts"
             },
             {
                 "question": "What is the primary goal of data classification?",
-                "options": ["To ensure data is encrypted", "To determine the level of protection required", "To delete unnecessary data", "To store data in the cloud"],
+                "options": [
+                    "To ensure data is encrypted",
+                    "To determine the level of protection required",
+                    "To delete unnecessary data",
+                    "To store data in the cloud"
+                ],
                 "correctAnswer": 1,
                 "category": "General Security Concepts"
             },
             {
                 "question": "Which of the following is a type of security control that discourages potential attackers?",
-                "options": ["Preventive", "Deterrent", "Detective", "Corrective"],
+                "options": [
+                    "Preventive",
+                    "Deterrent",
+                    "Detective",
+                    "Corrective"
+                ],
                 "correctAnswer": 1,
                 "category": "General Security Concepts"
             },
             {
                 "question": "What is the difference between authentication and authorization?",
-                "options": ["Authentication verifies identity, while authorization determines access rights", "Authorization verifies identity, while authentication determines access rights", "Authentication and authorization are the same thing", "Authentication is a type of authorization"],
+                "options": [
+                    "Authentication verifies identity, while authorization determines access rights",
+                    "Authorization verifies identity, while authentication determines access rights",
+                    "Authentication and authorization are the same thing",
+                    "Authentication is a type of authorization"
+                ],
                 "correctAnswer": 0,
                 "category": "General Security Concepts"
             },
             {
                 "question": "Which of the following is an example of a physical security control?",
-                "options": ["Encryption", "Access badges", "Firewall", "Intrusion detection system"],
+                "options": [
+                    "Encryption",
+                    "Access badges",
+                    "Firewall",
+                    "Intrusion detection system"
+                ],
                 "correctAnswer": 1,
                 "category": "General Security Concepts"
             },
             {
                 "question": "What is the purpose of a security information and event management (SIEM) system?",
-                "options": ["To encrypt data", "To monitor and analyze security events", "To provide physical security", "To manage user accounts"],
+                "options": [
+                    "To encrypt data",
+                    "To monitor and analyze security events",
+                    "To provide physical security",
+                    "To manage user accounts"
+                ],
                 "correctAnswer": 1,
                 "category": "General Security Concepts"
             },
             {
                 "question": "Which of the following is a type of security control that corrects or remediates a security incident?",
-                "options": ["Preventive", "Detective", "Corrective", "Compensating"],
+                "options": [
+                    "Preventive",
+                    "Detective",
+                    "Corrective",
+                    "Compensating"
+                ],
                 "correctAnswer": 2,
                 "category": "General Security Concepts"
             },
             {
                 "question": "What is the purpose of the principle of least privilege?",
-                "options": ["To grant users maximum access to resources", "To grant users only the access they need to perform their job", "To grant users access based on their seniority", "To grant users access based on their department"],
+                "options": [
+                    "To grant users maximum access to resources",
+                    "To grant users only the access they need to perform their job",
+                    "To grant users access based on their seniority",
+                    "To grant users access based on their department"
+                ],
                 "correctAnswer": 1,
                 "category": "General Security Concepts"
             },
             {
                 "question": "Which of the following is an example of a security control that detects malicious activity?",
-                "options": ["Firewall", "Intrusion detection system", "Encryption", "Access control policy"],
+                "options": [
+                    "Firewall",
+                    "Intrusion detection system",
+                    "Encryption",
+                    "Access control policy"
+                ],
                 "correctAnswer": 1,
                 "category": "General Security Concepts"
             },
             {
                 "question": "What is a zero-day vulnerability?",
-                "options": ["A vulnerability that has been patched", "A vulnerability that is known to the vendor but not yet patched", "A vulnerability that is unknown to the vendor", "A vulnerability that is known to the public"],
+                "options": [
+                    "A vulnerability that has been patched",
+                    "A vulnerability that is known to the vendor but not yet patched",
+                    "A vulnerability that is unknown to the vendor",
+                    "A vulnerability that is known to the public"
+                ],
                 "correctAnswer": 2,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "Which of the following is an example of a threat actor motivated by financial gain?",
-                "options": ["Hacktivist", "Nation-state actor", "Organized crime", "Insider threat"],
+                "options": [
+                    "Hacktivist",
+                    "Nation-state actor",
+                    "Organized crime",
+                    "Insider threat"
+                ],
                 "correctAnswer": 2,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "What is the difference between a threat and a vulnerability?",
-                "options": ["A threat is a weakness, while a vulnerability is a potential danger", "A threat is a potential danger, while a vulnerability is a weakness", "A threat and a vulnerability are the same thing", "A threat is a risk, while a vulnerability is a threat"],
+                "options": [
+                    "A threat is a weakness, while a vulnerability is a potential danger",
+                    "A threat is a potential danger, while a vulnerability is a weakness",
+                    "A threat and a vulnerability are the same thing",
+                    "A threat is a risk, while a vulnerability is a threat"
+                ],
                 "correctAnswer": 1,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "Which of the following is an example of a threat vector?",
-                "options": ["Unpatched software", "Phishing email", "Malware", "Social engineering"],
+                "options": [
+                    "Unpatched software",
+                    "Phishing email",
+                    "Malware",
+                    "Social engineering"
+                ],
                 "correctAnswer": 1,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "What is the purpose of a honeypot?",
-                "options": ["To prevent attacks", "To detect and analyze attacks", "To encrypt data", "To provide access control"],
+                "options": [
+                    "To prevent attacks",
+                    "To detect and analyze attacks",
+                    "To encrypt data",
+                    "To provide access control"
+                ],
                 "correctAnswer": 1,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "Which of the following is an example of a vulnerability in a web application?",
-                "options": ["SQL injection", "DDoS attack", "Malware infection", "Social engineering"],
+                "options": [
+                    "SQL injection",
+                    "DDoS attack",
+                    "Malware infection",
+                    "Social engineering"
+                ],
                 "correctAnswer": 0,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "What is the purpose of a security audit?",
-                "options": ["To encrypt data", "To detect vulnerabilities", "To provide access control", "To monitor network traffic"],
+                "options": [
+                    "To encrypt data",
+                    "To detect vulnerabilities",
+                    "To provide access control",
+                    "To monitor network traffic"
+                ],
                 "correctAnswer": 1,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "Which of the following is an example of a threat actor motivated by philosophical or political beliefs?",
-                "options": ["Hacktivist", "Nation-state actor", "Organized crime", "Insider threat"],
+                "options": [
+                    "Hacktivist",
+                    "Nation-state actor",
+                    "Organized crime",
+                    "Insider threat"
+                ],
                 "correctAnswer": 0,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "What is the purpose of a security control?",
-                "options": ["To provide access to resources", "To protect assets from threats", "To encrypt data", "To monitor network traffic"],
+                "options": [
+                    "To provide access to resources",
+                    "To protect assets from threats",
+                    "To encrypt data",
+                    "To monitor network traffic"
+                ],
                 "correctAnswer": 1,
                 "category": "Threats, Vulnerabilities, and Mitigations"
             },
             {
                 "question": "What is the purpose of a security incident response plan?",
-                "options": ["To prevent security incidents", "To detect and respond to security incidents", "To encrypt data", "To provide access control"],
+                "options": [
+                    "To prevent security incidents",
+                    "To detect and respond to security incidents",
+                    "To encrypt data",
+                    "To provide access control"
+                ],
                 "correctAnswer": 1,
                 "category": "Security Operations"
             },
             {
                 "question": "Which of the following is a phase of the incident response process?",
-                "options": ["Preparation", "Detection", "Containment", "All of the above"],
+                "options": [
+                    "Preparation",
+                    "Detection",
+                    "Containment",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "What is the purpose of threat hunting?",
-                "options": ["To detect threats that have not been discovered by normal security monitoring", "To prevent security incidents", "To encrypt data", "To provide access control"],
+                "options": [
+                    "To detect threats that have not been discovered by normal security monitoring",
+                    "To prevent security incidents",
+                    "To encrypt data",
+                    "To provide access control"
+                ],
                 "correctAnswer": 0,
                 "category": "Security Operations"
             },
             {
                 "question": "Which of the following is a step in the root cause analysis process?",
-                "options": ["Define and scope the incident", "Determine causal relationships", "Identify effective solutions", "All of the above"],
+                "options": [
+                    "Define and scope the incident",
+                    "Determine causal relationships",
+                    "Identify effective solutions",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "What is the purpose of digital forensic procedures?",
-                "options": ["To investigate cybercrimes or security incidents", "To gather, analyze, and preserve digital evidence", "To provide legal evidence", "All of the above"],
+                "options": [
+                    "To investigate cybercrimes or security incidents",
+                    "To gather, analyze, and preserve digital evidence",
+                    "To provide legal evidence",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "Which of the following is a phase of the digital forensic process?",
-                "options": ["Identification", "Collection", "Analysis", "All of the above"],
+                "options": [
+                    "Identification",
+                    "Collection",
+                    "Analysis",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "What is the purpose of data collection procedures?",
-                "options": ["To gather relevant information during incident response", "To preserve evidence", "To ensure data is not lost or modified", "All of the above"],
+                "options": [
+                    "To gather relevant information during incident response",
+                    "To preserve evidence",
+                    "To ensure data is not lost or modified",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "Which of the following is an example of a data source for incident investigation?",
-                "options": ["Vulnerability scans", "Packet captures", "Logs", "All of the above"],
+                "options": [
+                    "Vulnerability scans",
+                    "Packet captures",
+                    "Logs",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "What is the purpose of a SIEM system?",
-                "options": ["To provide real-time analysis of security alerts", "To correlate and analyze log data", "To generate alerts for security teams", "All of the above"],
+                "options": [
+                    "To provide real-time analysis of security alerts",
+                    "To correlate and analyze log data",
+                    "To generate alerts for security teams",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "Which of the following is an example of a network traffic analysis tool?",
-                "options": ["NetFlow", "Zeek", "MRTG", "All of the above"],
+                "options": [
+                    "NetFlow",
+                    "Zeek",
+                    "MRTG",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "What is the purpose of a single pane of glass (SPOG)?",
-                "options": ["To provide a central point of access for security teams", "To provide a unified view of the security posture", "To facilitate informed decision-making", "All of the above"],
+                "options": [
+                    "To provide a central point of access for security teams",
+                    "To provide a unified view of the security posture",
+                    "To facilitate informed decision-making",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "Which of the following is a benefit of automation and orchestration?",
-                "options": ["Increased efficiency and time savings", "Enforcement of baselines", "Secure scaling", "All of the above"],
+                "options": [
+                    "Increased efficiency and time savings",
+                    "Enforcement of baselines",
+                    "Secure scaling",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "What is the purpose of a playbook in security automation?",
-                "options": ["To guide incident response processes", "To execute automated tasks with human decision points", "To automate support ticket management", "To automate application development"],
+                "options": [
+                    "To guide incident response processes",
+                    "To execute automated tasks with human decision points",
+                    "To automate support ticket management",
+                    "To automate application development"
+                ],
                 "correctAnswer": 0,
                 "category": "Security Operations"
             },
             {
                 "question": "Which of the following is a benefit of automating onboarding processes?",
-                "options": ["Eliminates manual tasks", "Reduces errors", "Provides structured, consistent onboarding", "All of the above"],
+                "options": [
+                    "Eliminates manual tasks",
+                    "Reduces errors",
+                    "Provides structured, consistent onboarding",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "What is the purpose of automating security?",
-                "options": ["To prevent security vulnerabilities", "To respond to threats swiftly", "To maintain consistent security policies", "All of the above"],
+                "options": [
+                    "To prevent security vulnerabilities",
+                    "To respond to threats swiftly",
+                    "To maintain consistent security policies",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "Which of the following is an example of a security automation task?",
-                "options": ["Implementing guardrails", "Managing security groups", "Enabling and disabling services and access", "All of the above"],
+                "options": [
+                    "Implementing guardrails",
+                    "Managing security groups",
+                    "Enabling and disabling services and access",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Operations"
             },
             {
                 "question": "What is the purpose of a security awareness program?",
-                "options": ["To equip individuals to recognize and respond to threats", "To provide data protection", "To educate employees on security threats and mitigation measures", "All of the above"],
+                "options": [
+                    "To equip individuals to recognize and respond to threats",
+                    "To provide data protection",
+                    "To educate employees on security threats and mitigation measures",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is an example of an insider threat indicator?",
-                "options": ["Emotional distress", "Lifestyle incongruences", "Financial struggles", "All of the above"],
+                "options": [
+                    "Emotional distress",
+                    "Lifestyle incongruences",
+                    "Financial struggles",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "What is the purpose of a password manager?",
-                "options": ["To securely store and manage passwords", "To prevent password reuse", "To simplify password management", "All of the above"],
+                "options": [
+                    "To securely store and manage passwords",
+                    "To prevent password reuse",
+                    "To simplify password management",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is a security challenge associated with remote work?",
-                "options": ["Increased risk due to lack of physical security controls", "Data transmitted over public and private networks", "Weak security controls on home and public networks", "All of the above"],
+                "options": [
+                    "Increased risk due to lack of physical security controls",
+                    "Data transmitted over public and private networks",
+                    "Weak security controls on home and public networks",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "What is the purpose of a security policy?",
-                "options": ["To provide a system of principles and rules guiding decisions", "To ensure compliance with legal and ethical standards", "To provide guidance on handling various situations", "All of the above"],
+                "options": [
+                    "To provide a system of principles and rules guiding decisions",
+                    "To ensure compliance with legal and ethical standards",
+                    "To provide guidance on handling various situations",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is an example of a policy that might be included in a handbook?",
-                "options": ["Data destruction policy", "Remote work policy", "Data protection policy", "All of the above"],
+                "options": [
+                    "Data destruction policy",
+                    "Remote work policy",
+                    "Data protection policy",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "What is the purpose of a data classification policy?",
-                "options": ["To determine the level of protection required for data", "To ensure data is encrypted", "To delete unnecessary data", "To store data in the cloud"],
+                "options": [
+                    "To determine the level of protection required for data",
+                    "To ensure data is encrypted",
+                    "To delete unnecessary data",
+                    "To store data in the cloud"
+                ],
                 "correctAnswer": 0,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is an example of a security program management activity?",
-                "options": ["Security awareness training", "Risk management", "Compliance management", "All of the above"],
+                "options": [
+                    "Security awareness training",
+                    "Risk management",
+                    "Compliance management",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "What is the purpose of a security program?",
-                "options": ["To provide a framework for managing security risks", "To ensure the confidentiality, integrity, and availability of information assets", "To align security with business objectives", "All of the above"],
+                "options": [
+                    "To provide a framework for managing security risks",
+                    "To ensure the confidentiality, integrity, and availability of information assets",
+                    "To align security with business objectives",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is a security governance structure?",
-                "options": ["Boards and committees", "Government entities", "Centralized and decentralized structures", "All of the above"],
+                "options": [
+                    "Boards and committees",
+                    "Government entities",
+                    "Centralized and decentralized structures",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "What is the purpose of a compliance program?",
-                "options": ["To ensure adherence to laws, regulations, standards, and policies", "To prevent breaches and protect privacy", "To ensure business continuity", "All of the above"],
+                "options": [
+                    "To ensure adherence to laws, regulations, standards, and policies",
+                    "To prevent breaches and protect privacy",
+                    "To ensure business continuity",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is an example of a compliance reporting type?",
-                "options": ["Internal compliance reporting", "External compliance reporting", "Both A and B", "Neither A nor B"],
+                "options": [
+                    "Internal compliance reporting",
+                    "External compliance reporting",
+                    "Both A and B",
+                    "Neither A nor B"
+                ],
                 "correctAnswer": 2,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "What is the purpose of a risk management program?",
-                "options": ["To identify, assess, and manage potential risks", "To align IT strategy with business objectives", "To ensure efficient and effective use of IT resources", "All of the above"],
+                "options": [
+                    "To identify, assess, and manage potential risks",
+                    "To align IT strategy with business objectives",
+                    "To ensure efficient and effective use of IT resources",
+                    "All of the above"
+                ],
                 "correctAnswer": 0,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is a risk management strategy?",
-                "options": ["Risk transfer", "Risk acceptance", "Risk avoidance", "All of the above"],
+                "options": [
+                    "Risk transfer",
+                    "Risk acceptance",
+                    "Risk avoidance",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "What is the purpose of a third-party vendor risk assessment?",
-                "options": ["To evaluate the security, reliability, and performance of external entities", "To ensure interconnectivity and potential impact on multiple businesses", "To assess the security of vendors, suppliers, or service providers", "All of the above"],
+                "options": [
+                    "To evaluate the security, reliability, and performance of external entities",
+                    "To ensure interconnectivity and potential impact on multiple businesses",
+                    "To assess the security of vendors, suppliers, or service providers",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is an example of a supply chain risk?",
-                "options": ["Hardware manufacturers", "Secondary/aftermarket sources", "Software developers/providers", "All of the above"],
+                "options": [
+                    "Hardware manufacturers",
+                    "Secondary/aftermarket sources",
+                    "Software developers/providers",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "What is the purpose of a vendor assessment?",
-                "options": ["To evaluate the security, reliability, and performance of vendors", "To ensure compliance with security standards", "To assess the risk of vendor relationships", "All of the above"],
+                "options": [
+                    "To evaluate the security, reliability, and performance of vendors",
+                    "To ensure compliance with security standards",
+                    "To assess the risk of vendor relationships",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             },
             {
                 "question": "Which of the following is a type of contract or agreement?",
-                "options": ["Service Level Agreement (SLA)", "Memorandum of Agreement (MOA)", "Non-Disclosure Agreement (NDA)", "All of the above"],
+                "options": [
+                    "Service Level Agreement (SLA)",
+                    "Memorandum of Agreement (MOA)",
+                    "Non-Disclosure Agreement (NDA)",
+                    "All of the above"
+                ],
                 "correctAnswer": 3,
                 "category": "Security Program Management and Oversight"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 36,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 36,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "Cybersecurity Medium": {
-        questions: [
+        "questions": [
             {
                 "question": "A security administrator is designing a network segmentation strategy and wants to ensure that only authenticated devices can communicate with critical servers. Which control should be implemented to verify device health before granting network access?",
                 "options": [
@@ -1376,14 +1650,14 @@ const quizzes = {
                 "category": "Security Program Management and Oversight"
             }
         ],
-        icon: "fa-shield-alt",
-        color: "history",
-        difficulty: "Medium",
-        participants: 23,
-        description: "Prepare for the CompTIA Security+ Exam."
+        "icon": "fa-shield-alt",
+        "color": "history",
+        "difficulty": "Medium",
+        "participants": 23,
+        "description": "Prepare for the CompTIA Security+ Exam."
     },
     "CEH Lesson 1": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following is a fundamental principle of the CIA Triad?",
                 "options": [
@@ -1550,14 +1824,14 @@ const quizzes = {
                 "category": "Ethical Hacking Frameworks"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 2": {
-        questions: [
+        "questions": [
             {
                 "question": "Which technique is typically used to gather information without directly interacting with the target?",
                 "options": [
@@ -1702,14 +1976,14 @@ const quizzes = {
                 "category": "Reconnaissance Techniques"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 3": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following tools is used for network scanning?",
                 "options": [
@@ -1854,14 +2128,14 @@ const quizzes = {
                 "category": "Scanning Techniques"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 4": {
-        questions: [
+        "questions": [
             {
                 "question": "What is the purpose of NetBIOS enumeration in network reconnaissance?",
                 "options": [
@@ -2006,14 +2280,14 @@ const quizzes = {
                 "category": "Service Enumeration"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 5": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following is a common vulnerability assessment tool?",
                 "options": [
@@ -2158,14 +2432,14 @@ const quizzes = {
                 "category": "Patch Management"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 6": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following is used to gain unauthorized access to a target system?",
                 "options": [
@@ -2332,14 +2606,14 @@ const quizzes = {
                 "category": "Privilege Escalation"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 7": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following is a type of malware that hides its presence by modifying system files?",
                 "options": [
@@ -2484,14 +2758,14 @@ const quizzes = {
                 "category": "Ransomware Delivery"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 8": {
-        questions: [
+        "questions": [
             {
                 "question": "What is packet sniffing?",
                 "options": [
@@ -2647,14 +2921,14 @@ const quizzes = {
                 "category": "Sniffing Attacks"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 9": {
-        questions: [
+        "questions": [
             {
                 "question": "What is the primary objective of social engineering attacks?",
                 "options": [
@@ -2799,14 +3073,14 @@ const quizzes = {
                 "category": "Insider Threats"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 10": {
-        questions: [
+        "questions": [
             {
                 "question": "What is the main goal of a Denial-of-Service (DoS) attack?",
                 "options": [
@@ -2973,14 +3247,14 @@ const quizzes = {
                 "category": "DDoS Consequences"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 11": {
-        questions: [
+        "questions": [
             {
                 "question": "What is the main goal of a session hijacking attack?",
                 "options": [
@@ -3114,14 +3388,14 @@ const quizzes = {
                 "category": "Session Hijacking"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 12": {
-        questions: [
+        "questions": [
             {
                 "question": "What is the primary purpose of an Intrusion Detection System (IDS)?",
                 "options": [
@@ -3266,14 +3540,14 @@ const quizzes = {
                 "category": "IDS/IPS Techniques"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 13": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following is a common attack vector for compromising web servers?",
                 "options": [
@@ -3418,14 +3692,14 @@ const quizzes = {
                 "category": "Web Server Protocols"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 14": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following is categorized as an OWASP Top 10 vulnerability?",
                 "options": [
@@ -3592,14 +3866,14 @@ const quizzes = {
                 "category": "Web Server Defense"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 15": {
-        questions: [
+        "questions": [
             {
                 "question": "What is the main goal of a SQL Injection (SQLi) attack?",
                 "options": [
@@ -3755,14 +4029,14 @@ const quizzes = {
                 "category": "SQLi Detection"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 16": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following wireless encryption protocols is considered the least secure?",
                 "options": [
@@ -3918,14 +4192,14 @@ const quizzes = {
                 "category": "Evil Twin Attacks"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 17": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following is a common security vulnerability in mobile apps?",
                 "options": [
@@ -4070,14 +4344,14 @@ const quizzes = {
                 "category": "Mobile Data Protection"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 18": {
-        questions: [
+        "questions": [
             {
                 "question": "Which of the following is a common security vulnerability in IoT devices?",
                 "options": [
@@ -4211,14 +4485,14 @@ const quizzes = {
                 "category": "IoT Network Security"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 19": {
-        questions: [
+        "questions": [
             {
                 "question": "Which cloud service model provides virtualized hardware resources?",
                 "options": [
@@ -4352,14 +4626,14 @@ const quizzes = {
                 "category": "Cloud Container Security"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     },
     "CEH Lesson 20": {
-        questions: [
+        "questions": [
             {
                 "question": "What is the primary purpose of cryptography in cybersecurity?",
                 "options": [
@@ -4504,321 +4778,10 @@ const quizzes = {
                 "category": "Encryption"
             }
         ],
-        icon: "fa-user-shield",
-        color: "cybersecurity",
-        difficulty: "Easy",
-        participants: 6,
-        description: "Test your knowledge of basic cybersecurity concepts."
-    },
-};
-
-// DOM elements
-const mainContainer = document.getElementById('main-container');
-const quizSelectionPage = document.getElementById('quiz-selection-page');
-const quizPage = document.getElementById('quiz-page');
-const resultsPage = document.getElementById('results-page');
-const quizTitle = document.getElementById('quiz-title');
-const quizDifficulty = document.getElementById('quiz-difficulty');
-const questionText = document.getElementById('question-text');
-const optionsContainer = document.getElementById('options-container');
-const nextBtn = document.getElementById('next-btn');
-const prevBtn = document.getElementById('prev-btn');
-const submitBtn = document.getElementById('submit-btn');
-const progressText = document.getElementById('progress-text');
-const progressBar = document.querySelector('.progress-bar');
-// const timerElement = document.getElementById('timer');
-const scoreElement = document.getElementById('score');
-const performanceText = document.getElementById('performance-text');
-const summaryContainer = document.getElementById('summary-container');
-const retryBtn = document.getElementById('retry-btn');
-const showAnswersBtn = document.getElementById('show-answers');
-const backToQuizzes = document.getElementById('back-to-quizzes');
-const backToQuizzesFromResults = document.getElementById('back-to-quizzes-from-results');
-const quizCategories = document.getElementById('quiz-categories');
-
-// Quiz state variables
-let currentQuizName = "";
-let currentQuestionIndex = 0;
-let selectedOptions = [];
-let scores = 0;
-
-// Generate quiz cards for selection
-function generateQuizCards() {
-    quizCategories.innerHTML = '';
-
-    for (const [quizName, quizData] of Object.entries(quizzes)) {
-        const card = document.createElement('div');
-        card.classList.add('quiz-card', 'bg-white', 'rounded-xl', 'border', 'border-gray-100', 'overflow-hidden', 'shadow-md', 'transition-all', 'duration-300', 'cursor-pointer');
-        card.dataset.quiz = quizName;
-
-        // Set category color dynamically
-        const textColor = `text-${quizData.color}-600`;
-        const bgColor = `bg-${quizData.color}-100`;
-
-        card.innerHTML = `
-                    <div class="h-1 ${bgColor}"></div>
-                    <div class="p-6">
-                        <div class="flex items-start mb-4">
-                            <div class="flex-shrink-0 w-12 h-12 ${bgColor} rounded-lg flex items-center justify-center mr-4">
-                                <i class="fas ${quizData.icon} ${textColor} text-2xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">${quizName}</h3>
-                                <p class="text-gray-600 text-sm mt-1">${quizData.description}</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex justify-between mt-4">
-                            <div class="flex flex-col">
-                                <span class="text-sm text-gray-500">Difficulty</span>
-                                <span class="font-medium text-gray-800">${quizData.difficulty}</span>
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="text-sm text-gray-500">Questions</span>
-                                <span class="font-medium text-gray-800">${quizData.questions.length}</span>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-4 text-xs text-gray-500 flex items-center">
-                            <i class="fas fa-users mr-1"></i> 
-                            <span>${quizData.participants.toLocaleString()} participants</span>
-                        </div>
-                    </div>
-                    
-                    <div class="px-6 py-3 bg-gray-50 border-t border-gray-100">
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600 text-sm">Take the challenge</span>
-                            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full ${bgColor}">
-                                <i class="fas fa-arrow-right ${textColor} text-sm"></i>
-                            </span>
-                        </div>
-                    </div>
-                `;
-
-        card.addEventListener('click', () => startQuiz(quizName));
-        quizCategories.appendChild(card);
+        "icon": "fa-user-shield",
+        "color": "cybersecurity",
+        "difficulty": "Easy",
+        "participants": 6,
+        "description": "Test your knowledge of basic cybersecurity concepts."
     }
 }
-
-// Start the selected quiz
-function startQuiz(quizName) {
-    currentQuizName = quizName;
-    const quiz = quizzes[quizName];
-
-    // Set quiz header
-    quizTitle.textContent = quizName;
-    quizDifficulty.textContent = quiz.difficulty;
-    quizDifficulty.className = `px-3 py-1 rounded-full text-xs font-medium bg-${quiz.color}-100 text-${quiz.color}-800`;
-
-    // Initialize quiz state
-    currentQuestionIndex = 0;
-    selectedOptions = Array(quiz.questions.length).fill(null);
-    scores = 0;
-
-    // Hide selection and show quiz
-    quizSelectionPage.classList.add('hidden');
-    quizPage.classList.remove('hidden');
-
-    // Update progress bar
-    updateProgressBar();
-
-    // Render first question
-    renderQuestion();
-}
-
-// Render the current question and options
-function renderQuestion() {
-    const quiz = quizzes[currentQuizName];
-    const question = quiz.questions[currentQuestionIndex];
-
-    questionText.textContent = question.question;
-
-    // Clear previous options
-    optionsContainer.innerHTML = '';
-
-    // Create options elements
-    question.options.forEach((option, index) => {
-        const optionElement = document.createElement('button');
-        optionElement.classList.add('option-btn', 'bg-white', 'border', 'border-gray-200', 'rounded-lg', 'p-4', 'text-left', 'transition-all', 'hover:shadow-md');
-        optionElement.innerHTML = `
-                    <span class="inline-block w-8 h-8 mr-3 rounded-full bg-gray-100 text-center leading-8 font-medium">${String.fromCharCode(65 + index)}</span>
-                    ${option}
-                `;
-
-        // Check if this option was previously selected
-        if (selectedOptions[currentQuestionIndex] === index) {
-            optionElement.classList.add('selected', 'bg-blue-50', 'border-blue-300');
-        }
-
-        // Handle option selection
-        optionElement.addEventListener('click', () => {
-            // Remove selected class from all options
-            document.querySelectorAll('.option-btn').forEach(btn => {
-                btn.classList.remove('selected', 'bg-blue-50', 'border-blue-300');
-            });
-
-            // Add selected class to clicked option
-            optionElement.classList.add('selected', 'bg-blue-50', 'border-blue-300');
-            selectedOptions[currentQuestionIndex] = index;
-
-            // Enable navigation buttons if we have a selection
-            if (selectedOptions[currentQuestionIndex] !== null) {
-                nextBtn.disabled = false;
-            }
-        });
-
-        optionsContainer.appendChild(optionElement);
-    });
-
-    // Update buttons visibility
-    prevBtn.disabled = currentQuestionIndex === 0;
-    prevBtn.classList.toggle('invisible', currentQuestionIndex === 0);
-
-    nextBtn.classList.toggle('hidden', currentQuestionIndex === quiz.questions.length - 1);
-    submitBtn.classList.toggle('hidden', currentQuestionIndex !== quiz.questions.length - 1);
-
-    // Disable next button until option is selected
-    nextBtn.disabled = selectedOptions[currentQuestionIndex] === null;
-
-    // Update progress text
-    progressText.textContent = `Question ${currentQuestionIndex + 1} of ${quiz.questions.length}`;
-}
-
-// Update progress bar
-function updateProgressBar() {
-    const quiz = quizzes[currentQuizName];
-    const progressPercent = ((currentQuestionIndex) / quiz.questions.length) * 100;
-    progressBar.style.width = `${progressPercent}%`;
-}
-
-// Navigate to next question
-function nextQuestion() {
-    const quiz = quizzes[currentQuizName];
-    if (currentQuestionIndex < quiz.questions.length - 1) {
-        currentQuestionIndex++;
-        updateProgressBar();
-        renderQuestion();
-    }
-}
-
-// Navigate to previous question
-function prevQuestion() {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        updateProgressBar();
-        renderQuestion();
-    }
-}
-
-// Finish quiz and show results
-function finishQuiz() {
-    // Calculate score
-    scores = 0;
-    const quiz = quizzes[currentQuizName];
-    quiz.questions.forEach((question, index) => {
-        if (selectedOptions[index] === question.correctAnswer) {
-            scores++;
-        }
-    });
-
-    // Update UI
-    quizPage.classList.add('hidden');
-    resultsPage.classList.remove('hidden');
-
-    scoreElement.textContent = scores;
-    performanceText.parentElement.querySelector('#total-questions').textContent = quiz.questions.length;
-
-    // Performance text based on score
-    if (scores >= quiz.questions.length * 0.8) {
-        performanceText.textContent = "Outstanding! You really know your stuff.";
-        document.getElementById('result-icon').classList.add('bg-gradient-to-r', 'from-green-400', 'to-emerald-500');
-    } else if (scores >= quiz.questions.length * 0.6) {
-        performanceText.textContent = "Good job! You have solid knowledge.";
-        document.getElementById('result-icon').classList.add('bg-gradient-to-r', 'from-blue-400', 'to-indigo-500');
-    } else if (scores >= quiz.questions.length * 0.4) {
-        performanceText.textContent = "Not bad! You've got room to grow.";
-        document.getElementById('result-icon').classList.add('bg-gradient-to-r', 'from-yellow-400', 'to-orange-500');
-    } else {
-        performanceText.textContent = "Keep learning! Try again to improve.";
-        document.getElementById('result-icon').classList.add('bg-gradient-to-r', 'from-red-400', 'to-pink-500');
-    }
-}
-
-// Generate quiz summary
-function generateSummary() {
-    summaryContainer.innerHTML = '';
-    const quiz = quizzes[currentQuizName];
-
-    quiz.questions.forEach((question, index) => {
-        const summaryItem = document.createElement('div');
-        summaryItem.classList.add('border-b', 'border-gray-100', 'pb-4', 'last:border-0');
-
-        const userAnswer = selectedOptions[index];
-        const isCorrect = userAnswer === question.correctAnswer;
-
-        summaryItem.innerHTML = `
-                    <div class="flex justify-between items-center mb-2">
-                        <p class="font-medium text-gray-700">Question ${index + 1}: ${question.question}</p>
-                        <span class="${isCorrect ? 'text-correct' : 'text-incorrect'} font-bold">
-                            ${isCorrect ? '<i class="fas fa-check mr-1"></i> Correct' : '<i class="fas fa-times mr-1"></i> Incorrect'}
-                        </span>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                            <p class="font-medium text-gray-600 mb-1">Your Answer:</p>
-                            <div class="${isCorrect ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'} border rounded-lg p-2">
-                                ${userAnswer !== null ? question.options[userAnswer] : 'No answer'}
-                            </div>
-                        </div>
-                        ${isCorrect ? '' : `
-                        <div>
-                            <p class="font-medium text-gray-600 mb-1">Correct Answer:</p>
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-2">
-                                ${question.options[question.correctAnswer]}
-                            </div>
-                        </div>
-                        `}
-                    </div>
-                `;
-
-        summaryContainer.appendChild(summaryItem);
-    });
-}
-
-// Event listeners
-document.addEventListener('DOMContentLoaded', () => {
-    generateQuizCards();
-
-    // Tab switching logic
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    tabButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            tabButtons.forEach(b => b.classList.remove('bg-white', 'shadow'));
-            btn.classList.add('bg-white', 'shadow');
-        });
-    });
-
-    // Add an initial active state to the "Popular" tab
-    document.getElementById('popular-tab').classList.add('bg-white', 'shadow');
-});
-
-nextBtn.addEventListener('click', nextQuestion);
-prevBtn.addEventListener('click', prevQuestion);
-submitBtn.addEventListener('click', finishQuiz);
-
-retryBtn.addEventListener('click', () => {
-    resultsPage.classList.add('hidden');
-    startQuiz(currentQuizName);
-});
-
-backToQuizzes.addEventListener('click', () => {
-    quizPage.classList.add('hidden');
-    quizSelectionPage.classList.remove('hidden');
-});
-
-backToQuizzesFromResults.addEventListener('click', () => {
-    resultsPage.classList.add('hidden');
-    quizSelectionPage.classList.remove('hidden');
-});
-
-showAnswersBtn.addEventListener('click', generateSummary);
