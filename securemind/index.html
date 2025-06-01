@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureMind</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="py-12 px-4">
+    <div class="max-w-7xl mx-auto">
+        <!-- Quiz Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-3">
+                <i class="fas fa-brain mr-3 text-secondary"></i>SecureMind
+            </h1>
+            <p class="text-lg text-gray-600">Test your knowledge with our interactive quiz platform</p>
+        </div>
+
+        <!-- Main Content Container -->
+        <div id="main-container" class="bg-white rounded-xl shadow-xl p-6 md:p-8">
+            <!-- Quiz Selection Page -->
+            <div id="quiz-selection-page">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Select a Quiz</h2>
+                    <p class="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
+                        Choose from our selection of knowledge quizzes. Each quiz has multiple questions to test your
+                        expertise in different domains.
+                    </p>
+                    <div class="inline-flex space-x-2 bg-gray-100 p-2 rounded-lg mb-10">
+                        <button id="popular-tab"
+                            class="tab-btn bg-white shadow font-medium px-4 py-2 rounded-lg">Popular</button>
+                        <button id="all-tab"
+                            class="tab-btn px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">All
+                            Quizzes</button>
+                        <button id="new-tab"
+                            class="tab-btn px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors">New</button>
+                    </div>
+                </div>
+
+                <!-- Quiz Categories Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" id="quiz-categories">
+                    <!-- Quizzes will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Individual Quiz Page (hidden initially) -->
+            <div id="quiz-page" class="hidden">
+                <!-- Quiz Header -->
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 border-b pb-4">
+                    <div>
+                        <button id="back-to-quizzes" class="text-primary hover:text-blue-700 transition-colors">
+                            <i class="fas fa-arrow-left mr-2"></i> Back to Quizzes
+                        </button>
+                        <h2 id="quiz-title" class="text-2xl font-bold text-gray-800 mt-2"></h2>
+                    </div>
+                    <div class="flex items-center mt-2 md:mt-0">
+                        <span id="quiz-difficulty" class="px-3 py-1 rounded-full text-xs font-medium"></span>
+                    </div>
+                </div>
+
+                <!-- Progress Section -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-medium text-gray-700" id="progress-text">Question 1 of 10</span>
+                    </div>
+                    <div class="bg-gray-200 rounded-full h-2.5">
+                        <div class="progress-bar bg-gradient-to-r from-primary to-secondary h-2.5 rounded-full"
+                            style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="mb-8">
+                    <div
+                        class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-gray-100 rounded-xl p-6 shadow-sm">
+                        <h2 id="question-text" class="text-xl md:text-2xl font-semibold text-gray-800"></h2>
+                    </div>
+                </div>
+
+                <!-- Options -->
+                <div id="options-container" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                    <!-- Options populated by JavaScript -->
+                </div>
+
+                <!-- Navigation -->
+                <div class="flex justify-between">
+                    <button id="prev-btn"
+                        class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i> Previous
+                    </button>
+                    <button id="next-btn"
+                        class="bg-gradient-to-r from-primary to-secondary hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-all">
+                        Next <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                    <button id="submit-btn"
+                        class="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-8 rounded-lg transition-colors hidden">
+                        Submit <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Page (hidden initially) -->
+            <div id="results-page" class="hidden fade-in">
+                <div class="result-page rounded-xl border-2 border-blue-100 shadow-md p-8 mb-8">
+                    <div class="text-center">
+                        <div id="result-icon"
+                            class="mx-auto w-28 h-28 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-medal text-white text-5xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Quiz Completed!</h2>
+                        <div class="mb-6">
+                            <p class="text-xl mb-2">Your score: <span id="score" class="font-bold">0</span>/<span
+                                    id="total-questions">10</span></p>
+                            <p id="performance-text" class="text-gray-600"></p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-lg mx-auto bg-white rounded-xl p-6 mb-10">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Detailed Results</h3>
+                        <div id="summary-container" class="space-y-4">
+                            <!-- Results summary will be added here -->
+                        </div>
+                    </div>
+
+                    <div class="text-center flex flex-col sm:flex-row justify-center gap-3">
+                        <button id="retry-btn"
+                            class="bg-gradient-to-r from-primary to-secondary hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-8 rounded-lg">
+                            <i class="fas fa-redo mr-2"></i> Try Again
+                        </button>
+                        <button id="back-to-quizzes-from-results"
+                            class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-8 rounded-lg">
+                            <i class="fas fa-list mr-2"></i> All Quizzes
+                        </button>
+                        <button id="show-answers"
+                            class="bg-gray-800 hover:bg-gray-900 text-white font-medium py-3 px-8 rounded-lg">
+                            <i class="fas fa-list-alt mr-2"></i> Review Answers
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Footer -->
+        <div class="text-center text-gray-500 text-sm mt-12">
+            <p>Created with <i class="fas fa-heart text-red-500 mx-1"></i> using HTML, CSS & JavaScript</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
