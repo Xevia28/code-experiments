@@ -1382,6 +1382,370 @@ const quizzes = {
         participants: 23,
         description: "Prepare for the CompTIA Security+ Exam."
     },
+    "Essentials of Networking": {
+        questions: [
+            {
+                "question": "Which layer of the OSI model is responsible for end-to-end communication and error recovery?",
+                "options": ["Network", "Transport", "Data Link", "Session"],
+                "correctAnswer": 1,
+                "category": "OSI Model"
+            },
+            {
+                "question": "Which OSI layer handles routing between devices on different networks?",
+                "options": ["Transport", "Session", "Network", "Data Link"],
+                "correctAnswer": 2,
+                "category": "OSI Model"
+            },
+            {
+                "question": "In the TCP/IP model, what layer is equivalent to the OSI's Network layer?",
+                "options": ["Application", "Transport", "Internet", "Link"],
+                "correctAnswer": 2,
+                "category": "TCP/IP Model"
+            },
+            {
+                "question": "How many bits are in an IPv4 address?",
+                "options": ["16", "32", "64", "128"],
+                "correctAnswer": 1,
+                "category": "TCP/IP Model"
+            },
+            {
+                "question": "What is the CIDR notation for a subnet mask of 255.255.255.192?",
+                "options": ["/24", "/25", "/26", "/27"],
+                "correctAnswer": 2,
+                "category": "Subnetting"
+            },
+            {
+                "question": "How many usable hosts can you have in a /28 network?",
+                "options": ["14", "16", "30", "32"],
+                "correctAnswer": 0,
+                "category": "Subnetting"
+            },
+            {
+                "question": "Which topology connects all devices to a single central device?",
+                "options": ["Bus", "Ring", "Mesh", "Star"],
+                "correctAnswer": 3,
+                "category": "Network Topologies"
+            },
+            {
+                "question": "Which topology provides the most redundancy?",
+                "options": ["Star", "Mesh", "Bus", "Ring"],
+                "correctAnswer": 1,
+                "category": "Network Topologies"
+            },
+            {
+                "question": "What type of network spans a city or large campus?",
+                "options": ["LAN", "WAN", "MAN", "PAN"],
+                "correctAnswer": 2,
+                "category": "Network Types"
+            },
+            {
+                "question": "What is the largest type of network by geographical scope?",
+                "options": ["LAN", "MAN", "WAN", "PAN"],
+                "correctAnswer": 2,
+                "category": "Network Types"
+            },
+            {
+                "question": "Which of the following separates the control plane from the data plane?",
+                "options": ["NFV", "MPLS", "SD-WAN", "SDN"],
+                "correctAnswer": 3,
+                "category": "SDN, NFV, SD-WAN"
+            },
+            {
+                "question": "Which technology uses virtualization to abstract network functions from hardware?",
+                "options": ["SDN", "NFV", "VLAN", "MPLS"],
+                "correctAnswer": 1,
+                "category": "SDN, NFV, SD-WAN"
+            },
+            {
+                "question": "Which protocol is used to assign IP addresses dynamically?",
+                "options": ["DNS", "DHCP", "FTP", "SMTP"],
+                "correctAnswer": 1,
+                "category": "Network Protocols"
+            },
+            {
+                "question": "Which protocol translates domain names into IP addresses?",
+                "options": ["DNS", "DHCP", "SMTP", "FTP"],
+                "correctAnswer": 0,
+                "category": "Network Protocols"
+            },
+            {
+                "question": "Which of the following protocols is used to send emails?",
+                "options": ["HTTP", "DHCP", "SMTP", "DNS"],
+                "correctAnswer": 2,
+                "category": "Network Protocols"
+            },
+            {
+                "question": "Which protocol ensures secure communication over HTTP?",
+                "options": ["HTTPS", "FTP", "SMTP", "DNS"],
+                "correctAnswer": 0,
+                "category": "Network Protocols"
+            },
+            {
+                "question": "What does NAT do?",
+                "options": [
+                    "Provides encryption for data",
+                    "Assigns MAC addresses",
+                    "Translates private IPs to public IPs",
+                    "Routes packets over the Internet"
+                ],
+                "correctAnswer": 2,
+                "category": "NAT"
+            },
+            {
+                "question": "Which type of NAT maps one private IP to one public IP?",
+                "options": ["Static NAT", "Dynamic NAT", "PAT", "SNAT"],
+                "correctAnswer": 0,
+                "category": "NAT"
+            },
+            {
+                "question": "Which technology uses labels instead of IP addresses to forward packets?",
+                "options": ["VLAN", "NAT", "MPLS", "OSPF"],
+                "correctAnswer": 2,
+                "category": "MPLS"
+            },
+            {
+                "question": "MPLS primarily improves what aspect of networking?",
+                "options": ["IP address allocation", "Packet routing speed", "MAC filtering", "Email delivery"],
+                "correctAnswer": 1,
+                "category": "MPLS"
+            },
+            {
+                "question": "What is the main purpose of a VPN?",
+                "options": [
+                    "Speed up local area networks",
+                    "Encrypt and tunnel network traffic",
+                    "Assign dynamic IP addresses",
+                    "Prevent phishing attacks"
+                ],
+                "correctAnswer": 1,
+                "category": "VPN"
+            },
+            {
+                "question": "Which protocol is commonly used to create VPN tunnels?",
+                "options": ["FTP", "IPSec", "SMTP", "HTTP"],
+                "correctAnswer": 1,
+                "category": "VPN"
+            },
+            {
+                "question": "What does a VLAN allow you to do?",
+                "options": [
+                    "Create multiple physical networks",
+                    "Create virtual networks within a physical switch",
+                    "Assign static IPs",
+                    "Route traffic to the Internet"
+                ],
+                "correctAnswer": 1,
+                "category": "VLANs"
+            },
+            {
+                "question": "Which of the following is a benefit of using VLANs?",
+                "options": [
+                    "Decreased IP range",
+                    "Improved DNS performance",
+                    "Improved network segmentation and security",
+                    "Increased DHCP leases"
+                ],
+                "correctAnswer": 2,
+                "category": "VLANs"
+            },
+            {
+                "question": "Which routing protocol is considered a link-state protocol?",
+                "options": ["RIP", "BGP", "EIGRP", "OSPF"],
+                "correctAnswer": 3,
+                "category": "Routing"
+            },
+            {
+                "question": "Which routing protocol is used between different autonomous systems?",
+                "options": ["OSPF", "EIGRP", "BGP", "RIP"],
+                "correctAnswer": 2,
+                "category": "Routing"
+            },
+            {
+                "question": "What is a main advantage of dynamic routing over static routing?",
+                "options": [
+                    "Easier to configure",
+                    "Better performance",
+                    "Adapts to network changes automatically",
+                    "More secure"
+                ],
+                "correctAnswer": 2,
+                "category": "Routing"
+            },
+            {
+                "question": "Which protocol uses DUAL algorithm for routing?",
+                "options": ["OSPF", "BGP", "RIP", "EIGRP"],
+                "correctAnswer": 3,
+                "category": "Routing"
+            },
+            {
+                "question": "Which feature ensures high availability of a network by distributing traffic across multiple servers?",
+                "options": ["Firewall", "Load Balancing", "NAT", "VPN"],
+                "correctAnswer": 1,
+                "category": "Load Balancing and Redundancy"
+            },
+            {
+                "question": "What is the purpose of network redundancy?",
+                "options": [
+                    "To provide additional IP addresses",
+                    "To ensure network availability in case of failure",
+                    "To balance network traffic",
+                    "To translate IP addresses"
+                ],
+                "correctAnswer": 1,
+                "category": "Load Balancing and Redundancy"
+            },
+            {
+                "question": "What is the main function of a firewall?",
+                "options": [
+                    "Speed up traffic",
+                    "Translate IP addresses",
+                    "Filter incoming and outgoing traffic",
+                    "Assign MAC addresses"
+                ],
+                "correctAnswer": 2,
+                "category": "Firewall Basics"
+            },
+            {
+                "question": "Which type of firewall filters traffic based on application-layer data?",
+                "options": ["Packet-filtering", "Stateful", "Proxy", "Circuit-level"],
+                "correctAnswer": 2,
+                "category": "Firewall Basics"
+            },
+            {
+                "question": "Which wireless encryption protocol is considered the most secure?",
+                "options": ["WEP", "WPA", "WPA2", "WPA3"],
+                "correctAnswer": 3,
+                "category": "Wireless Network Security"
+            },
+            {
+                "question": "Which of the following is a common wireless security threat?",
+                "options": ["Packet flooding", "War driving", "NAT overflow", "MAC filtering"],
+                "correctAnswer": 1,
+                "category": "Wireless Network Security"
+            },
+            {
+                "question": "What does IDS stand for?",
+                "options": ["Internet Detection System", "Intrusion Detection System", "Internal Defense System", "Integrated Defense Suite"],
+                "correctAnswer": 1,
+                "category": "IDS/IPS"
+            },
+            {
+                "question": "Which of the following can block malicious traffic in real time?",
+                "options": ["IDS", "Firewall", "IPS", "Proxy"],
+                "correctAnswer": 2,
+                "category": "IDS/IPS"
+            },
+            {
+                "question": "Which OSI layer is responsible for data formatting and encryption?",
+                "options": ["Session", "Presentation", "Application", "Transport"],
+                "correctAnswer": 1,
+                "category": "OSI Model"
+            },
+            {
+                "question": "At which OSI layer do switches operate?",
+                "options": ["Network", "Data Link", "Transport", "Physical"],
+                "correctAnswer": 1,
+                "category": "OSI Model"
+            },
+            {
+                "question": "Which device typically operates at Layer 3 of the OSI model?",
+                "options": ["Hub", "Switch", "Router", "Repeater"],
+                "correctAnswer": 2,
+                "category": "OSI Model"
+            },
+            {
+                "question": "Which TCP/IP layer is responsible for reliable end-to-end communication?",
+                "options": ["Network", "Transport", "Application", "Link"],
+                "correctAnswer": 1,
+                "category": "TCP/IP Model"
+            },
+            {
+                "question": "What is the primary advantage of SD-WAN over traditional WANs?",
+                "options": [
+                    "More expensive hardware",
+                    "Centralized control and optimization",
+                    "Better DHCP support",
+                    "Improved firewall configuration"
+                ],
+                "correctAnswer": 1,
+                "category": "SDN, NFV, SD-WAN"
+            },
+            {
+                "question": "Which of the following uses port 21 by default?",
+                "options": ["FTP", "HTTP", "SSH", "SMTP"],
+                "correctAnswer": 0,
+                "category": "Network Protocols"
+            },
+            {
+                "question": "What does CIDR stand for?",
+                "options": [
+                    "Classless Inter-Domain Routing",
+                    "Computer Internet Data Routing",
+                    "Control Information Data Rate",
+                    "Core Internet Dynamic Routing"
+                ],
+                "correctAnswer": 0,
+                "category": "Subnetting"
+            },
+            {
+                "question": "Which class of IP address offers up to 16,777,214 hosts per network?",
+                "options": ["Class A", "Class B", "Class C", "Class D"],
+                "correctAnswer": 0,
+                "category": "Subnetting"
+            },
+            {
+                "question": "What is a characteristic of a full mesh topology?",
+                "options": [
+                    "Each device connects to a central hub",
+                    "Each device connects to exactly two others",
+                    "Each device is connected to every other device",
+                    "All devices connect using a single backbone cable"
+                ],
+                "correctAnswer": 2,
+                "category": "Network Topologies"
+            },
+            {
+                "question": "Which device combines multiple signals into one and sends it over a single line?",
+                "options": ["Hub", "Multiplexer", "Switch", "Repeater"],
+                "correctAnswer": 1,
+                "category": "General Networking"
+            },
+            {
+                "question": "Which routing protocol uses path vector logic and is commonly used on the Internet?",
+                "options": ["OSPF", "RIP", "EIGRP", "BGP"],
+                "correctAnswer": 3,
+                "category": "Routing"
+            },
+            {
+                "question": "Which of the following is a function of an IDS but NOT of a traditional firewall?",
+                "options": [
+                    "Blocking traffic based on port",
+                    "Allowing traffic based on IP address",
+                    "Monitoring and alerting on suspicious activity",
+                    "Performing NAT"
+                ],
+                "correctAnswer": 2,
+                "category": "IDS/IPS"
+            },
+            {
+                "question": "Which type of address is used to communicate with all hosts on a network segment?",
+                "options": ["Unicast", "Anycast", "Multicast", "Broadcast"],
+                "correctAnswer": 3,
+                "category": "General Networking"
+            },
+            {
+                "question": "What type of VPN is most commonly used to connect remote users securely to a corporate network?",
+                "options": ["Site-to-Site VPN", "Remote Access VPN", "PPTP VPN", "Layer 2 VPN"],
+                "correctAnswer": 1,
+                "category": "VPN"
+            }
+        ],
+        icon: "fa-user-shield",
+        color: "cybersecurity",
+        difficulty: "Easy",
+        participants: 15,
+        description: "Test your knowledge of basic cybersecurity concepts."
+    },
     "CEH Lesson 1": {
         questions: [
             {
